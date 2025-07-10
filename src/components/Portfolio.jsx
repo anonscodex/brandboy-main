@@ -74,12 +74,15 @@ const Portfolio = () => {
       <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-center">
         {brands.map((brand, index) => (
           <button
-            key={index}
-            onClick={() => setSelectedBrand(brand)}
-            className="border px-4 py-2 rounded-lg bg-green-700 text-white hover:bg-green-800 shadow-md transition-all duration-200"
-          >
-            {brand.name}
-          </button>
+  key={index}
+  onClick={() => setSelectedBrand(brand)}
+  className="px-5 py-3 rounded-xl bg-gradient-to-r from-green-600 via-green-700 to-green-800 
+             text-white font-semibold shadow-lg hover:shadow-2xl hover:scale-105 transform 
+             transition-all duration-300 ease-in-out tracking-wide"
+>
+  {brand.name}
+</button>
+
         ))}
       </div>
 
